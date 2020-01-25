@@ -49,3 +49,7 @@ If you need any help or assistance, feel free to reach me on Discord at `Creed B
 #### Disclaimer
 
 This is my first Firebase project, pardon me if any conventions are improperly setup. If you see any issues that should be fixed please create an issue or open a pull request so I can fix them. Please send any suggestions to improve the security, flow or anything about this project.
+
+#### To-Do
+
+Integrate proper Firebase sign in and sign out using custom tokens and Firebase Admin.
