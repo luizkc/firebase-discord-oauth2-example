@@ -1,5 +1,7 @@
 # Discord OAuth2 Flow with Firebase
 
+## see it in action [here](https://us-central1-discord-oauth-demo.cloudfunctions.net/api/auth)!
+
 Firebase provides great structure to create your own authentication system. However, the default providers list for external log-ins (oAuth2) is limited.
 
 I'm a big fan of Discord and so here is a sample Firebase app that uses the Discord oAuth2 to create users in our Firebase Authentication and our Firestore database.
@@ -46,10 +48,6 @@ If you need any help or assistance, feel free to reach me on Discord at `Creed B
 8.  Head over to Firebase and check out your users being added to the `Authentication` Tab
 9.  Head over to your Firestore Database and notice how we store additional user information that the Firebase authentication system does not let us store, for example, a user's profile picture, joined servers, and more.
 
-#### Disclaimer
+#### Notes:
 
-This is my first Firebase project, pardon me if any conventions are improperly setup. If you see any issues that should be fixed please create an issue or open a pull request so I can fix them. Please send any suggestions to improve the security, flow or anything about this project.
-
-#### To-Do
-
-Integrate proper Firebase sign in and sign out using custom tokens and Firebase Admin.
+If you are getting errors because of your redirect URL, check that the URL listed in your Discord Developer Portal matches the URL of your project.
