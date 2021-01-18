@@ -1,4 +1,4 @@
-// AUTHENTICATION ROUTES USINNG PASSPORT TO HANDLE THE OAUTH2 DANCE
+// AUTHENTICATION ROUTES USING PASSPORT TO HANDLE THE OAUTH2 DANCE
 
 const passport = require("passport")
 const firebase = require("firebase")
@@ -6,7 +6,7 @@ const firebase = require("firebase")
 // SCOPES DEFINED BY DISCORD TO GRAB USER PERMISSIONS
 var scopes = require("../info").oauthKeys.scopes
 
-module.exports = app => {
+module.exports = (app) => {
   app.get("/logout", async (req, res) => {
     await firebase.auth().signOut()
     req.logout()
@@ -29,9 +29,9 @@ module.exports = app => {
     "/login",
     passport.authenticate("discord", {
       scope: scopes,
-      failureRedirect: "/error"
+      failureRedirect: "/error",
     }),
-    async function(req, res) {
+    async function (req, res) {
       await firebase.auth().signInWithCustomToken(req.user.token)
     }
   )
