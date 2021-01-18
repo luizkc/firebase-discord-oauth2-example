@@ -8,7 +8,7 @@ I'm a big fan of Discord and so here is a sample Firebase app that uses the Disc
 
 Please read the **Disclaimer** below if you have any issues.
 
-If you need any help or assistance, feel free to reach me on Discord at `Creed Bratton#7146` or open an issue/pull request here on GitHub.
+If you need any help or assistance open an issue/pull request here on GitHub.
 
 #### A brief summary of the process:
 
@@ -25,7 +25,7 @@ If you need any help or assistance, feel free to reach me on Discord at `Creed B
 1.  Go to the [Discord Developer Portal](https://discordapp.com/developers/applications/)
 2.  Create an application
 3.  Make note of your `Client ID` and `Client Secret`
-4.  Go into the OAuth2 tab and add the following redirect URI: `https://us-central1-<project-id>.cloudfunctions.net/api/auth` and **hit save!**
+4.  Go into the OAuth2 tab and add the following redirect URI: `https://us-central1-<project-id>.cloudfunctions.net/api` and **hit save!**
 5.  Make note of the scopes you want from the bottom of the page
 
 #### Setting Up Firebase
