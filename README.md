@@ -25,8 +25,11 @@ If you need any help or assistance open an issue/pull request here on GitHub.
 1.  Go to the [Discord Developer Portal](https://discordapp.com/developers/applications/)
 2.  Create an application
 3.  Make note of your `Client ID` and `Client Secret`
-4.  Go into the OAuth2 tab and add the following redirect URI: `https://us-central1-<project-id>.cloudfunctions.net/api` and **hit save!**
-5.  Make note of the scopes you want from the bottom of the page
+4.  Go into the OAuth2 tab and add the following redirect URIs:
+`https://us-central1-<project-id>.cloudfunctions.net/api`
+`https://us-central1-<project-id>.cloudfunctions.net/api/auth` 
+5. **hit save!**
+6. Make note of the scopes you want from the bottom of the page
 
 #### Setting Up Firebase
 
